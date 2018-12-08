@@ -1,0 +1,170 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../home/wataru/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../home/wataru/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../home/wataru/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../home/wataru/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../home/wataru/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../home/wataru/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../home/wataru/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../home/wataru/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../home/wataru/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../sass/style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 10, ../sass/style.scss */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1200px 0;
+}
+@media all and (min-width: 769px) {
+  /* line 10, ../sass/style.scss */
+  .container {
+    min-width: 1280px;
+  }
+}
+
+/* line 18, ../sass/style.scss */
+.alternative-layout {
+  height: 300px;
+}
+@media all and (min-width: 769px) {
+  /* line 18, ../sass/style.scss */
+  .alternative-layout {
+    display: flex;
+  }
+}
+/* line 23, ../sass/style.scss */
+.alternative-layout ~ .alternative-layout {
+  margin-top: 124px;
+}
+@media all and (min-width: 769px) {
+  /* line 23, ../sass/style.scss */
+  .alternative-layout ~ .alternative-layout {
+    margin-top: 64px;
+  }
+}
+@media all and (min-width: 769px) {
+  /* line 29, ../sass/style.scss */
+  .alternative-layout.alternative-layout-reverse {
+    flex-direction: row-reverse;
+  }
+}
+@media all and (min-width: 769px) {
+  /* line 33, ../sass/style.scss */
+  .alternative-layout.alternative-layout-reverse .alternative-layout_detail {
+    margin: 30px -30px 0 0;
+  }
+}
+/* line 40, ../sass/style.scss */
+.alternative-layout .alternative-layout_img {
+  height: 100%;
+  background-image: url("https://picsum.photos/g/200/300/");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media all and (min-width: 769px) {
+  /* line 40, ../sass/style.scss */
+  .alternative-layout .alternative-layout_img {
+    width: 70%;
+  }
+}
+/* line 50, ../sass/style.scss */
+.alternative-layout .alternative-layout_detail {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -150px;
+  height: 250px;
+  background: #333;
+  padding: 30px 50px;
+}
+@media all and (min-width: 769px) {
+  /* line 50, ../sass/style.scss */
+  .alternative-layout .alternative-layout_detail {
+    width: 400px;
+    margin: 30px 0 0 -30px;
+  }
+}
+/* line 62, ../sass/style.scss */
+.alternative-layout .alternative-layout_detail .alternative-layout_heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+/* line 67, ../sass/style.scss */
+.alternative-layout .alternative-layout_detail .alternative-layout_btn {
+  margin-top: 50px;
+}
+/* line 69, ../sass/style.scss */
+.alternative-layout .alternative-layout_detail .alternative-layout_btn .btn {
+  display: inlile-block;
+  padding: 3px 5px;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
